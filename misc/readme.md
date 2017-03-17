@@ -6,16 +6,17 @@ These utilities display the same test values used by the round package, but they
 
 This table describes equivalency between various rounding modes.
 
-|Rounding Mode|IEEE 754-2008|C|Java|Go math/big|
+|<sub>Rounding Mode</sub>|<sub>IEEE 754</sub>|<sub>C</sub>|<sub>Java</sub>|<sub>Go math/big</sub>|
 |-------------|-------------|-|----|-----------|
-|Round to nearest neighbour, round ties to even|roundTiesToEven|FE_TONEAREST|RoundingMode.HALF_EVEN|big.ToNearestEven|
-|Round to nearest neighbour, round ties toward zero|||RoundingMode.HALF_DOWN||
-|Round to nearest neighbour, round ties away from zero|roundTiesToAway||RoundingMode.HALF_UP|big.ToNearestAway|
-|Round toward positive infinity	|roundTowardPositive|FE_UPWARD|RoundingMode.CEILING|big.ToPositiveInf|
-|Round toward negative infinity	|roundTowardNegative|FE_DOWNWARD|RoundingMode.FLOOR|big.ToNegativeInf|
-|Round toward zero|roundTowardZero|FE_TOWARDZERO|RoundingMode.DOWN|big.ToZero|
-|Round away from zero|||RoundingMode.UP|big.AwayFromZero|
-|Do not round, assert exact result|||RoundingMode.UNNECESSARY||	
+|<sub>Round to nearest neighbour, round ties to even</sub>|<sub>roundTiesToEven</sub>|<sub>FE_TONEAREST</sub>|<sub>RoundingMode.HALF_EVEN</sub>|<sub>big.ToNearestEven</sub>|
+|<sub>Round to nearest neighbour, round ties toward zero</sub>|||<sub>RoundingMode.HALF_DOWN</sub>||
+|<sub>Round to nearest neighbour, round ties away from zero</sub>|<sub>roundTiesToAway</sub>||<sub>RoundingMode.HALF_UP</sub>|<sub>big.ToNearestAway</sub>|
+|<sub>Round toward positive infinity</sub>|<sub>roundTowardPositive</sub>|<sub>FE_UPWARD</sub>|<sub>RoundingMode.CEILING</sub>|<sub>big.ToPositiveInf</sub>|
+|<sub>Round toward negative infinity</sub>|<sub>roundTowardNegative</sub>|<sub>FE_DOWNWARD</sub>|<sub>RoundingMode.FLOOR</sub>|<sub>big.ToNegativeInf</sub>|
+|<sub>Round toward zero</sub>|<sub>roundTowardZero</sub>|<sub>FE_TOWARDZERO</sub>|<sub>RoundingMode.DOWN</sub>|<sub>big.ToZero</sub>|
+|<sub>Round away from zero|||<sub>RoundingMode.UP</sub>|<sub>big.AwayFromZero</sub>|
+|<sub>Do not round, assert exact result</sub>|||<sub>RoundingMode.UNNECESSARY</sub>||
+
 ## C
 
 Assumption: A C compiler, such as GCC or Clang, is installed.
