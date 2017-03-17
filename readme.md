@@ -53,7 +53,7 @@ There are some additional utilities in the [misc](/misc) subdirectory. These uti
 
 ## Testing
 
-The tests cover a range of test values, including the zero and infinity special cases. NaN is not included because a comparison between two NaN's always returns false.
+The tests cover a range of test values, including the zero and infinity special cases. NaN is not included because a comparison between two NaN values always returns false.
 
 There is an additional set of more rigorous tests in the [cround](/cround) subdirectory. These tests compare the round package results to the results returned from the mature rounding functions implemented in the C standard library.
 
