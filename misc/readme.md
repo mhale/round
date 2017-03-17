@@ -10,7 +10,7 @@ This table describes equivalency between various rounding modes.
 |-------------|-------------|-|----|-----------|
 |<sub>Round to nearest neighbour, round ties to even</sub>|<sub>roundTiesToEven</sub>|<sub>FE_TONEAREST</sub>|<sub>RoundingMode.HALF_EVEN</sub>|<sub>big.ToNearestEven</sub>|
 |<sub>Round to nearest neighbour, round ties toward zero</sub>| | |<sub>RoundingMode.HALF_DOWN</sub>||
-|<sub>Round to nearest neighbour, round ties away from zero</sub>|<sub>roundTiesToAway</sub>||<sub>RoundingMode.HALF_UP</sub>|<sub>big.ToNearestAway</sub>|
+|<sub>Round to nearest neighbour, round ties away from zero</sub>|<sub>roundTiesToAway</sub>| |<sub>RoundingMode.HALF_UP</sub>|<sub>big.ToNearestAway</sub>|
 |<sub>Round toward positive infinity</sub>|<sub>roundTowardPositive</sub>|<sub>FE_UPWARD</sub>|<sub>RoundingMode.CEILING</sub>|<sub>big.ToPositiveInf</sub>|
 |<sub>Round toward negative infinity</sub>|<sub>roundTowardNegative</sub>|<sub>FE_DOWNWARD</sub>|<sub>RoundingMode.FLOOR</sub>|<sub>big.ToNegativeInf</sub>|
 |<sub>Round toward zero</sub>|<sub>roundTowardZero</sub>|<sub>FE_TOWARDZERO</sub>|<sub>RoundingMode.DOWN</sub>|<sub>big.ToZero</sub>|
